@@ -19,6 +19,7 @@
         <module>hw01-maven</module>
         <module>hw02-list</module>
         <module>hw03-testframework</module>
+        <module>hw04-logging</module>
     </modules>
 
     <properties>
