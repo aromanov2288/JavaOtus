@@ -10,8 +10,16 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>hw05-gc</artifactId>
-    <name>hw05-gc</name>
+    <artifactId>hw06-design</artifactId>
+    <name>hw06-design</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
     <build>
         <finalName>${project.name}</finalName>
@@ -25,7 +33,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>ru.romanov.hw05gc.App</mainClass>
+                            <mainClass>ru.romanov.hw06design.App</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
