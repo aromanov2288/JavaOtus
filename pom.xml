@@ -21,6 +21,7 @@
         <module>hw03-testframework</module>
         <module>hw04-logging</module>
         <module>hw05-gc</module>
+        <module>hw06-design</module>
     </modules>
 
     <properties>
@@ -29,6 +30,7 @@
         <maven.compiler.target>11</maven.compiler.target>
         <com.google.guava.version>28.0-jre</com.google.guava.version>
         <org.projectlombok.lombok.version>1.18.8</org.projectlombok.lombok.version>
+        <org.junit.jupiter.api.version>5.5.2</org.junit.jupiter.api.version>
     </properties>
 
     <dependencyManagement>
@@ -42,6 +44,11 @@
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>${org.projectlombok.lombok.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-api</artifactId>
+                <version>${org.junit.jupiter.api.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
