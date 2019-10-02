@@ -22,6 +22,7 @@
         <module>hw04-logging</module>
         <module>hw05-gc</module>
         <module>hw06-design</module>
+        <module>hw07-patternsdesign</module>
     </modules>
 
     <properties>
