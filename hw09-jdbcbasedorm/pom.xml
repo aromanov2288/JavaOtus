@@ -10,10 +10,14 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>hw06-design</artifactId>
-    <name>hw06-design</name>
+    <artifactId>hw09-jdbcbasedorm</artifactId>
+    <name>hw09-jdbcbasedorm</name>
 
     <dependencies>
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
@@ -38,7 +42,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>ru.romanov.hw06design.App</mainClass>
+                            <mainClass>ru.romanov.hw09jdbcbasedorm.App</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
