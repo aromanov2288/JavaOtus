@@ -19,6 +19,11 @@
             <artifactId>junit-jupiter-api</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
@@ -33,7 +38,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>ru.romanov.hw06patternsdesign.App</mainClass>
+                            <mainClass>ru.romanov.hw07patternsdesign.App</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
