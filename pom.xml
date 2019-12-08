@@ -26,6 +26,7 @@
         <module>hw08-jsonobjectwriter</module>
         <module>hw09-jdbcbasedorm</module>
         <module>hw10-hibernatebasedorm</module>
+        <module>hw11-cache</module>
     </modules>
 
     <properties>

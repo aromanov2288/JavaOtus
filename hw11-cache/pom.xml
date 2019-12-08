@@ -10,8 +10,8 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>hw10-hibernatebasedorm</artifactId>
-    <name>hw10-hibernatebasedorm</name>
+    <artifactId>hw11-cache</artifactId>
+    <name>hw11-cache</name>
 
     <dependencies>
         <dependency>
