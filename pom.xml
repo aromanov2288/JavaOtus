@@ -27,6 +27,7 @@
         <module>hw09-jdbcbasedorm</module>
         <module>hw10-hibernatebasedorm</module>
         <module>hw11-cache</module>
+        <module>hw12-server</module>
     </modules>
 
     <properties>
@@ -39,6 +40,8 @@
         <com.h2database.version>1.4.200</com.h2database.version>
         <org.hibernate.version>5.4.8.Final</org.hibernate.version>
         <ch.qos.logback.classic.version>1.2.3</ch.qos.logback.classic.version>
+        <org.eclipse.jetty.version>9.4.24.v20191120</org.eclipse.jetty.version>
+        <org.webjars.jquery>3.3.1</org.webjars.jquery>
         <org.junit.jupiter.version>5.5.2</org.junit.jupiter.version>
     </properties>
 
@@ -73,6 +76,21 @@
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-classic</artifactId>
                 <version>${ch.qos.logback.classic.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-server</artifactId>
+                <version>${org.eclipse.jetty.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-webapp</artifactId>
+                <version>${org.eclipse.jetty.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.webjars</groupId>
+                <artifactId>jquery</artifactId>
+                <version>${org.webjars.jquery}</version>
             </dependency>
             <dependency>
                 <groupId>org.junit.jupiter</groupId>

@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Войти</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script>
+        $( document ).ready(function() {
+            $('#loginForm').submit(function (event) {
+                event.preventDefault();
+                $.ajax(
+                    '/api/login',
+                    {
+                        type: 'POST',
+                        contentType: 'application/json',
+                        data: JSON.stringify({
+                            login: $('#login').val(),
+                            password: $('#password').val()
+                        }),
+                        success: function (result) {
+                            window.location.assign('/main_page');
+                        }
+                    }
+                );
+            });
+        });
+    </script>
+</head>
+<body>
+<form id="loginForm">
+    Логин:
+    <input type="text" id="login" />
+    <br/>
+    Пароль:
+    <input type="text" id="password" />
+    <br/>
+    <input type="submit" value="Войти" />
+</form>
+</body>
+</html>

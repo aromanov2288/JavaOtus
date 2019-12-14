@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Новый пользователь</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script>
+        $( document ).ready(function() {
+            $('#addForm').submit(function (event) {
+                event.preventDefault();
+                $.ajax(
+                    '/api/users',
+                    {
+                        type: 'POST',
+                        contentType: 'application/json',
+                        data: JSON.stringify({
+                            name: $('#name').val(),
+                            age: $('#age').val()
+                        }),
+                        success: function (result) {
+                            window.location.assign('/all_users');
+                        }
+                    }
+                );
+            });
+        });
+    </script>
+</head>
+<body>
+<h1>Добавить нового пользователя:</h1>
+<form id="addForm">
+    Имя:
+    <input type="text" id="name" />
+    <br/>
+    Возвраст:
+    <input type="text" id="age" />
+    <br/>
+    <input type="submit" value="Сохранить" />
+</form>
+</body>
+</html>
