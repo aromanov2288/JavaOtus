@@ -29,6 +29,7 @@
         <module>hw11-cache</module>
         <module>hw12-server</module>
         <module>hw13-serverspring</module>
+        <module>hw14-seqofnumbers</module>
     </modules>
 
     <properties>
