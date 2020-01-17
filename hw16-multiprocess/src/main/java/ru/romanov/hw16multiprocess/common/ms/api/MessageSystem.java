@@ -4,11 +4,11 @@ import ru.romanov.hw16multiprocess.common.model.domain.MsMessage;
 
 public interface MessageSystem {
 
-    boolean addDatabaseClient(Integer clientPort);
+    void addClient(MsClient msClient);
 
-    boolean removeDatabaseClient(Integer clientId);
+    void removeClient(String clientId);
 
-    void newMessage(Integer clientFromPort, MsMessage msg);
+    boolean newMessage(MsMessage msg);
 
     void dispose() throws InterruptedException;
 }

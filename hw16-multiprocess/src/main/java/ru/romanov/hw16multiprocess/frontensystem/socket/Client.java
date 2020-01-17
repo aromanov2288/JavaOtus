@@ -3,7 +3,6 @@ package ru.romanov.hw16multiprocess.frontensystem.socket;
 import com.google.gson.Gson;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Component;
 import ru.romanov.hw16multiprocess.common.model.ServiceType;
 import ru.romanov.hw16multiprocess.common.model.SocketMessageType;
 import ru.romanov.hw16multiprocess.common.model.domain.MsMessage;
@@ -15,6 +14,7 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
 
+import static ru.romanov.hw16multiprocess.common.model.SocketMessageType.REGISTER_SERVICE;
 import static ru.romanov.hw16multiprocess.common.model.SocketMessageType.REQUEST;
 import static ru.romanov.hw16multiprocess.common.model.SocketMessageType.STATUS;
 
@@ -31,6 +31,11 @@ public class Client {
 
     public boolean newMessage(MsMessage msMessage) {
         SocketMessage socketMessage = new SocketMessage(REQUEST.getName(), msMessage, null, CURRENT_PORT, SERVICE_TYPE);
+        return sendMessage(gson.toJson(socketMessage));
+    }
+
+    public boolean registerService() {
+        SocketMessage socketMessage = new SocketMessage(REGISTER_SERVICE.getName(), null, null, CURRENT_PORT, SERVICE_TYPE);
         return sendMessage(gson.toJson(socketMessage));
     }
 
