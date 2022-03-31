@@ -44,7 +44,7 @@
         <ch.qos.logback.classic.version>1.2.3</ch.qos.logback.classic.version>
         <org.eclipse.jetty.version>9.4.24.v20191120</org.eclipse.jetty.version>
         <org.webjars.jquery>3.3.1</org.webjars.jquery>
-        <org.springframework.version>5.2.2.RELEASE</org.springframework.version>
+        <org.springframework.version>5.3.18</org.springframework.version>
         <javax.servlet.api.version>4.0.1</javax.servlet.api.version>
         <org.junit.jupiter.version>5.5.2</org.junit.jupiter.version>
     </properties>
